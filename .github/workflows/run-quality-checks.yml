@@ -2,7 +2,7 @@ name: Liquibase_RUN_PRO_CHECKS
 
 on:
    workflow_dispatch:
-#  push:
+   push:
     branches: [ main ]
 #   pull_request:
 #     branches: [ main ]
