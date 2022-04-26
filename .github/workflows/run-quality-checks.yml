@@ -1,4 +1,4 @@
-name: Liquibase_Docker_Hosted
+name: Liquibase_RUN_PRO_CHECKS
 
 on:
    workflow_dispatch:
