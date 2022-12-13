@@ -11,3 +11,7 @@ INSERT INTO SALES (ITEM, QUANTITY, AMOUNT) VALUES ('Leather sofa By Maxo', 4, 50
 --changeset MikeO:insertsales-3 labels:jira-101
 INSERT INTO SALES (ITEM, QUANTITY, AMOUNT) VALUES ('Round coffee table By Maxo', 1, 800.29);
 --rollback DELETE FROM SALES WHERE ITEM='Round coffee table By Maxo';
+
+--changeset MikeO:createtable-2 labels:jira-102
+CREATE TABLE SALES2 (ID BIGINT AUTO_INCREMENT, ITEM VARCHAR(255), QUANTITY NUMBER, AMOUNT FLOAT, CONSTRAINT SALES_PK PRIMARY KEY (ID));
+--rollback DROP TABLE SALES2;
