@@ -16,8 +16,10 @@ env:
 #    LIQUIBASE_HUB_API_KEY: ${{ secrets.LIQUIBASE_HUB_API_KEY }}
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  RunChecks:
+  RunFlow:
     runs-on: ubuntu-latest
+    environment: 
+      name: DEV
     steps: 
     - uses: actions/checkout@v2
     
