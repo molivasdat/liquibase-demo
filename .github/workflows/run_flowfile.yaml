@@ -1,4 +1,4 @@
-name: Liquibase_RUN_PRO_CHECKS
+name: Liquibase_RUN_FLOWFILE
 
 on:
    workflow_dispatch:
