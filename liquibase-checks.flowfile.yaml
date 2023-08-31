@@ -1,0 +1,16 @@
+stages:
+
+  ## The first stage of actions
+  Default:
+    actions:
+      #
+      # Show Quality Checks
+      #
+      - type: liquibase
+        command: checks show
+      #
+      # Quality Checks for changelog
+      #
+      - type: liquibase
+        command: checks run
+        cmdArgs: {checks-scope: changelog}
